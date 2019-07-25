@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<title>Final Project</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <h1 class="header"><img src="Images/preview.png" alt="Welcome"></h1>
+    <button class="tablink" onclick="openPage('home', this, 'blue')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('sponsors', this, 'green')">Sponsors</button>
+    <button class="tablink" onclick="openPage('contact', this, 'red')">Contact</button>
+    <button class="tablink" onclick="openPage('raffle', this, 'darkorange')">Raffle</button>
+    <button class="tablink" onclick="openPage('about', this, 'purple')">About</button>
+
+    <div id="home" class="tabcontent">
+
+        <h1 class="compName">XenoSpace</h1>
+        <h3>Explore uncharted regions well beyond the horizon </h3>
+        <p class="clk-img">Click the Spaceship</p>
+        <div class="container">
+            <p class="ship"><img id="ship" src="Images/spaceship.png" alt="spaceship"></p>
+        </div>
+    </div>
+
+    <div id="sponsors" class="tabcontent">
+        <h1>Our top sponsors:</h1>
+        <h7>Click on the Images</h7>
+
+        <table align="center">
+            <tr>
+                <td>
+                    <p><a href="https://marvelcinematicuniverse.fandom.com/wiki/Iron_Man" target="_blank">Tony Stark</a>
+                    </p>
+                    <p>
+                        Sponsored $3 Trillion
+                    </p>
+                    <img id="tonyStark" src="Images/tony.jpg" alt="Tony Stark" width="450px;">
+                </td>
+                <td>
+                    <p class="duck"><a href="https://disney.fandom.com/wiki/Scrooge_McDuck" target="_blank">Scrooge
+                            McDuck</a></p>
+                    <p class="dmoney">
+                        Sponsored $2.85 Quintillion
+                    </p>
+                    <img id="duck" src="Images/duck.jpeg" alt="Scrooge McDuck" width="450px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><a href="https://batman.fandom.com/wiki/Batman_(Ben_Affleck)" target="_blank">Bruce Wayne</a></p>
+                    <p>
+                        Sponsored $100 Million
+                    </p>
+                    <img id="bruceWayne" src="Images/wayne.png" alt="Bruce Wayne" width="450px;">
+                </td>
+                </td>
+                <td>
+                    <p class="smaug"><a href="https://lotr.fandom.com/wiki/Smaug" target="_blank">Smaug</a></p>
+                    <p class="smoney">
+                        Sponsored $20 Billion
+                    </p>
+                    <img id="smaug" src="Images/rich.jpg" alt="Smaug" width="450px;">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="contact" class="tabcontent">
+        <h1>Contact</h1>
+        <p>You can contact us at (420)-690-1738</p>
+        <p>You can also E-mail at "XenoSpace@outlook.com"</p>
+        <br>
+        <h4>Please Take a Moment to tell us how we are doing</h4>
+        <textarea id="feedback" placeholder="Tell us how we are doing :)"></textarea>
+        <br>
+        <button id="fb-btn">Submit</button>
+        <br>
+        <p>Enter your email if you would like to subscribe/unsubscribe to our weekly Newsletter</p>
+        <input placeholder="Enter Email" type="email" id="clientmail">
+        <br>
+        <p>Thank You</p>
+        <button id="mail-btn">Subscribe</button> <button id="unsub-btn">Unsubscribe</button>
+    </div>
+
+    <div id="raffle" class="tabcontent">
+        <h1>Test your luck and win a chance to travel to Mars!</h1>
+        <table>
+            <td>
+                <tr>
+                    <p>
+                        <strong>Money Spent: $<span id="moneyGain">0 </span></strong>
+                    </p>
+                    <p>
+                        Hundred dollars per attempt. The higher the money, the higher your chance of winning!
+                    </p>
+
+                    <p>
+                        If you get a winning ticket, you get 100% refund for that specific time.
+                    </p>
+                    <p class="warning">
+                        Please don't spam click the button (it's for your own good).
+                    </p>
+                </tr>
+            </td>
+        </table>
+        <td>
+            <p class="inp"><input type="number" id="input"> Enter the amount of money you wish to pay
+            </p>
+
+            <hr class="rfle">
+
+            <strong>$100 - $900</strong> = Fat Chance
+
+            <p><strong>$1000 - $9000</strong> = Decent Chance</p>
+
+            <p><strong>$10000+</strong> = Good Chance</p>
+            <table>
+                <tr>
+                    <p id="results"></p>
+
+                </tr>
+                <tr>
+                    <p><img class="marvin" src="Images/marvin.png" alt="Marvin the Martian">
+                        <button id="raffle-btn">Come Visit Marvin</button><span id="win"></span>
+                    </p>
+                </tr>
+        </td>
+        </table>
+    </div>
+
+    <div id="about" class="tabcontent">
+        <h1>About</h1>
+        <p class="about">
+            Welcome to XenoSpace, your number one source for all things space travel and manufacturing. We're dedicated
+            to
+            providing you the very best that we can.
+            <p class="about"><br> With an emphasis on the most durable materials, the most reliable service, and the
+                most affordable
+                prices.</p>
+
+            <br>
+            <p class="about">Founded in 1999 by Xeno, XenoSpace has come a long way from its beginnings in a shed. When
+                Xeno first
+                started out, his passion for space travel drove him to start their own business.</p>
+
+            <br>
+            <p class="about"> We hope you enjoy our products as much as we enjoy offering them to you. If you have any
+                questions or
+                comments, please don't hesitate to contact us.</p>
+
+            <p class="logo"><img class="logo" src="Images/logo.png" alt="Logo"></p>
+
+        </p>
+    </div>
+
+
+    <!--Load JavaScript-->
+    <script src="main.js"></script>
+</body>
+
+</html>
