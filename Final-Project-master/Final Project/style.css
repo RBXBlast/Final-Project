@@ -18,6 +18,7 @@ html {
     padding: 14px 16px;
     font-size: 17px;
     width: 20%;
+    border-radius:3px 3px  10px  10px;
 }
 
 .tablink:hover {
